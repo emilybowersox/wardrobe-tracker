@@ -17,8 +17,11 @@ namespace WardrobeTracker.Models
         [Column("ItemName")]
         public string Name { get; set; }
 
+        [Required]
         [Column("ItemType")]
         public string Type { get; set; }
+
+        public string SubType { get; set; }
 
         [Display(Name = "Lifestyle Category")]
         public string LifestyleCategory { get; set; }
